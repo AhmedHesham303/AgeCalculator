@@ -1,0 +1,164 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: hsl(0, 0%, 94%);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  background-color: white;
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 1rem;
+  border-bottom-right-radius: 10rem;
+  position: relative;
+}
+
+.form {
+  padding: 4rem 25rem 2rem 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 6rem;
+  justify-items: center;
+}
+
+.input-text {
+  border: solid 1px hsl(0, 1%, 44%);
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 2.4rem;
+  padding: 1rem 1.5rem;
+  display: block;
+  margin: 0.6rem 0rem;
+  width: 100%;
+  color: black;
+}
+
+.input-text:focus {
+  outline: 1px solid hsl(259, 100%, 65%);
+}
+
+.input-label,
+.error-msg {
+  font-weight: 700;
+  color: hsl(0, 1%, 44%);
+}
+
+.input-label {
+  font-size: 1rem;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 5rem 2rem 4rem;
+  margin-top: -5rem;
+}
+
+.content-item {
+  line-height: 7rem;
+  font-size: 7rem;
+  font-weight: 800;
+}
+
+.dots {
+  color: hsl(259, 100%, 65%);
+}
+
+.separator {
+  display: block;
+  width: 80%;
+  margin-top: 0.5rem;
+  padding: 0rem 25rem 2rem 4rem;
+}
+
+hr {
+  border: solid 1px hsla(0, 1%, 44%, 0.25);
+}
+
+.icon {
+  position: absolute;
+  background-color: hsl(259, 100%, 65%);
+  color: white;
+  border-radius: 50%;
+  padding: 2rem;
+  right: 4rem;
+  top: 11rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+.icon:hover {
+  background-color: black;
+}
+
+.error-msg {
+  display: none;
+  font-size: 0.7rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .input-text {
+    font-size: 1.4rem;
+    padding: 0.6rem 0.8rem;
+  }
+  .content-item {
+    line-height: 6rem;
+    font-size: 6rem;
+    font-weight: 800;
+  }
+  .main-container {
+    height: 70%;
+  }
+  .input-label {
+    font-size: 0.8rem;
+  }
+  .error-msg {
+    font-size: 0.6rem;
+  }
+  .icon {
+    width: 2.2rem;
+    height: 2.2rem;
+    padding: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .form {
+    padding: 4rem;
+  }
+  .main-content {
+    padding: 4rem;
+  }
+  .error-msg {
+    font-size: 0.4rem;
+  }
+  .icon {
+    left: 17rem;
+  }
+  .separator {
+    padding: 0rem 0rem 6rem 4rem;
+    /* padding: 0rem 25rem 2rem 4rem; */
+  }
+}
