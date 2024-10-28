@@ -144,21 +144,107 @@ hr {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 860px) {
   .form {
     padding: 4rem;
+    gap: 5rem;
   }
   .main-content {
-    padding: 4rem;
+    padding: 3rem;
   }
   .error-msg {
     font-size: 0.4rem;
   }
   .icon {
-    left: 17rem;
+    top: 27%;
+    left: 45%;
   }
   .separator {
     padding: 0rem 0rem 6rem 4rem;
-    /* padding: 0rem 25rem 2rem 4rem; */
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .form {
+    padding: 3rem;
+  }
+  .content-item {
+    font-size: 4rem;
+  }
+  .input-text {
+    font-size: 1.2rem;
+    padding: 0.5rem 0.7rem;
+  }
+  .input-label {
+    font-size: 0.6rem;
+  }
+  .icon {
+    top: 22%;
+    left: 45%;
+    width: 2rem;
+    height: 2rem;
+    padding: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .form {
+    gap: 4rem;
+  }
+  .content-item {
+    font-size: 3rem;
+  }
+  .input-text {
+    font-size: 1rem;
+    padding: 0.4rem 0.6rem;
+  }
+  .input-label {
+    font-size: 0.5rem;
+  }
+  .icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    padding: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .form {
+    padding: 2rem;
+    gap: 3.5rem;
+  }
+  .content-item {
+    font-size: 2.2rem;
+  }
+  .input-text {
+    font-size: 0.6rem;
+    padding: 0.3rem 0.5rem;
+  }
+  .input-label {
+    font-size: 0.4rem;
+  }
+  .icon {
+    top: 19%;
+    width: 1.6rem;
+    height: 1.6rem;
+    padding: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .form {
+    gap: 3rem;
+  }
+  .content-item {
+    font-size: 2rem;
+  }
+  .icon {
+    top: 25%;
+    width: 1.4rem;
+    height: 1.3rem;
+    padding: 1rem;
+  }
+  .separator {
+    padding-right: 1rem;
   }
 }

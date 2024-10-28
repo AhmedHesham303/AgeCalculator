@@ -13,13 +13,11 @@ function checkDays(days) {
     msg[0].style.display = "block";
     msg[0].style.color = "hsl(0, 100%, 67%)";
     label[0].style.color = "hsl(0, 100%, 67%)";
-    // input[0].style.border = "solid 1px hsl(0, 100%, 67%)";
   } else if (days.value.length < 2 || days.value < 1 || days.value > 31) {
     msg[0].innerText = "Must be a valid day";
     msg[0].style.display = "block";
     msg[0].style.color = "hsl(0, 100%, 67%)";
     label[0].style.color = "hsl(0, 100%, 67%)";
-    // input[0].style.border = "solid 1px hsl(0, 100%, 67%)";
   } else {
     msg[0].style.display = "none";
     label[0].style.color = "hsl(0, 1%, 44%)";
@@ -33,13 +31,11 @@ function checkMonths(months) {
     msg[1].style.display = "block";
     msg[1].style.color = "hsl(0, 100%, 67%)";
     label[1].style.color = "hsl(0, 100%, 67%)";
-    // input[1].style.border = "solid 1px hsl(0, 100%, 67%)";
   } else if (months.value.length < 2 || months.value < 1 || months.value > 12) {
     msg[1].innerText = "Must be a valid month";
     msg[1].style.display = "block";
     msg[1].style.color = "hsl(0, 100%, 67%)";
     label[1].style.color = "hsl(0, 100%, 67%)";
-    // input[0].style.border = "solid 1px hsl(0, 100%, 67%)";
   } else {
     msg[1].style.display = "none";
     label[1].style.color = "hsl(0, 1%, 44%)";
@@ -53,19 +49,16 @@ function checkYears(years) {
     msg[2].style.display = "block";
     msg[2].style.color = "hsl(0, 100%, 67%)";
     label[2].style.color = "hsl(0, 100%, 67%)";
-    // input[2].style.border = "solid 1px hsl(0, 100%, 67%)";
   } else if (years.value.length < 4) {
     msg[2].innerText = "Must be a valid year";
     msg[2].style.display = "block";
     msg[2].style.color = "hsl(0, 100%, 67%)";
     label[2].style.color = "hsl(0, 100%, 67%)";
-    // input[0].style.border = "solid 1px hsl(0, 100%, 67%)";
   } else if (years.value > curYear) {
     msg[2].innerText = "Must be a in the past";
     msg[2].style.display = "block";
     msg[2].style.color = "hsl(0, 100%, 67%)";
     label[2].style.color = "hsl(0, 100%, 67%)";
-    // input[0].style.border = "solid 1px hsl(0, 100%, 67%)";
   } else {
     msg[2].style.display = "none";
     label[2].style.color = "hsl(0, 1%, 44%)";
